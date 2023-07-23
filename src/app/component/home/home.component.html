@@ -1,0 +1,23 @@
+<div class="container" *ngIf="welcomePage">
+  <div class="start-page">
+    <h2 class="title">
+      ¡Bienvenido a mi Sprint 6!
+    </h2>
+
+    <p class="titleMessage">
+      Este es el proyecto de mi Sprint 6 en la IT Academy. <br><br>
+      Haz click en empezar, y veamos una historia: 🚀
+    </p>
+
+
+    <div class="button-container">
+      <button class="startButton" type="button" (click)="start()">
+        Empezar
+      </button>
+    </div>
+
+  </div>
+
+</div>
+
+<app-escena *ngIf="!welcomePage" [stories]="stories" [actualPage]="actualPage"></app-escena>

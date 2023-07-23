@@ -1,0 +1,76 @@
+.container {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #333;
+  min-height: 97.5vh;
+  min-width: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.textBoxes{
+  margin-top: 10%;
+}
+
+
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 710px;
+  padding: 20px;
+  margin: 8px;
+  background-color: #ffffffad;
+  color: #333333;
+  transition: all 0.3s ease;
+  background-size: cover;
+  background-position: center;
+  font-weight: bold;
+}
+
+.container-button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.buttons button {
+  width: 350px;
+  height: 70px;
+  margin: 5px;
+  border: none;
+  background-color: rgba(223, 235, 0, 0.65);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  font-size: xx-large;
+  border-radius: 20px;
+}
+
+.buttons button:hover{
+  background-color: rgba(223, 235, 0);
+}
+
+.buttons button:active {
+  transform: translateY(5px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  background-color: rgb(235, 192, 0);
+}
+
+.featured-story {
+  background-color: rgba(45, 4, 249, 0.7);
+  border: 2px solid #000;
+  color: white;
+}

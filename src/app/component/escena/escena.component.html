@@ -1,0 +1,13 @@
+<div class="container" [style.backgroundImage]="'url(' + actualPage + ')'">
+  <div class="textBoxes">
+    <p *ngFor=" let story of stories; let i=index" [ngClass]="{'featured-story': i === counter}" class="frases">
+      {{story.story}} </p>
+  </div>
+
+  <div class="container-button">
+    <div class="buttons">
+      <button type="button" (click)="prev()"><span>Anterior</span></button>
+      <button type="button" (click)="next()"><span>Siguiente</span></button>
+    </div>
+  </div>
+</div>
